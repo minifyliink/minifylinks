@@ -1,52 +1,438 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>URL Shortener</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>URL Shortener | Create Short and Shareable Links</title>
+
+<meta name="description" content="Learn how URL shorteners simplify long web addresses into short, memorable links for better sharing and online communication.">
+
+
 <style>
-body {
-    font-family: Arial;
-    text-align: center;
-    padding: 50px;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
-.container {
-    max-width: 700px;
+
+body{
+    background:#f8fafc;
+    color:#1e293b;
+}
+
+
+/* Header */
+
+header{
+    background:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+
+nav a{
+    text-decoration:none;
+    color:#334155;
+    margin-left:25px;
+}
+
+
+
+/* Hero */
+
+.hero{
+    padding:80px 8%;
+    text-align:center;
+}
+
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+
+.hero p{
+    max-width:750px;
     margin:auto;
+    font-size:18px;
+    color:#64748b;
+    line-height:1.7;
 }
 
-input {
-    width:70%;
-    padding:12px;
-}
 
-button {
-    padding:12px 20px;
+
+.hero button{
+    margin-top:30px;
     background:#2563eb;
     color:white;
+    padding:14px 30px;
     border:none;
+    border-radius:8px;
 }
+
+
+
+/* Sections */
+
+section{
+    padding:60px 8%;
+}
+
+
+.heading{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+
+.content{
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    color:#475569;
+}
+
+
+
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+
+.card{
+    background:white;
+    width:260px;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+
+
+/* CTA */
+
+.cta{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    border-radius:15px;
+}
+
+
+.cta h2{
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+
+
+/* Footer */
+
+footer{
+    background:#0f172a;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+
+
+@media(max-width:768px){
+
+nav{
+display:none;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+}
+
 </style>
+
+
 </head>
+
 
 <body>
 
-<div class="container">
 
-<h1>Shorten Long URLs Easily</h1>
+<header>
 
-<p>Create short, shareable links with our URL shortening service.</p>
+<div class="logo">
+URL Shortener
+</div>
 
-<input type="text" placeholder="Paste your long URL here">
 
-<button>Shorten URL</button>
+<nav>
 
-<h2>Features</h2>
+<a href="#">Home</a>
+<a href="#">Features</a>
+<a href="#">Services</a>
+<a href="#">Blog</a>
+<a href="#">Contact</a>
 
-<p>✓ Fast URL Shortening</p>
-<p>✓ Custom Short Links</p>
-<p>✓ QR Code Generation</p>
+</nav>
+
+
+</header>
+
+
+
+<section class="hero">
+
+
+<h1>
+Simplify Long URLs With A Powerful URL Shortener
+</h1>
+
+
+<p>
+A URL shortener helps transform lengthy web addresses into short, clean and easy-to-share links. Improve link readability, make sharing easier, and create better experiences across digital platforms.
+</p>
+
+
+<button>
+Learn More
+</button>
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+<h2 class="heading">
+What Is A URL Shortener?
+</h2>
+
+
+<div class="content">
+
+<p>
+A URL shortener is an online tool that converts long web addresses into shorter versions. Short links are easier to remember, share, and use across websites, social media platforms, emails, and marketing campaigns.
+</p>
+
 
 </div>
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+<h2 class="heading">
+Benefits Of URL Shortening
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+Easy Sharing
+</h3>
+
+<p>
+Short URLs take less space and make sharing content faster on different online platforms.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Better Branding
+</h3>
+
+<p>
+Custom short links help businesses create memorable and professional online identities.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+Improved User Experience
+</h3>
+
+<p>
+Simple links improve readability and make it easier for users to access content.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+<h2 class="heading">
+How URL Shorteners Work
+</h2>
+
+
+<div class="content">
+
+<p>
+URL shortening works by creating a unique short link connected to the original web address. When users open the short link, they are redirected to the original destination URL.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+<h2 class="heading">
+URL Shortener Uses
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+Social Media
+</h3>
+
+<p>
+Short links make sharing content easier on platforms like instagram, youtube, facebook, and linkedin.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Marketing Campaigns
+</h3>
+
+<p>
+Businesses use shortened URLs for promotions, advertisements, and digital campaigns.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+QR Codes
+</h3>
+
+<p>
+Short URLs can be combined with QR codes for quick access to online resources.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<section class="cta">
+
+
+<h2>
+Create Simple And Shareable Links
+</h2>
+
+
+<p>
+Make long web addresses shorter, cleaner, and easier to share across the internet.
+</p>
+
+
+</section>
+
+
+
+
+<footer>
+
+<p>
+© 2026 URL Shortener. All Rights Reserved.
+</p>
+
+</footer>
+
+
 
 </body>
 </html>
