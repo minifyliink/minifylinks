@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blogs | URL Shortener</title>
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+    background:#f8fafc;
+    color:#1e293b;
+}
+
+
+/* Header */
+
+header{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+
+header h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+
+
+/* Blog Section */
+
+.blog-section{
+    width:90%;
+    margin:50px auto;
+}
+
+
+.blog-section h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+
+
+/* Carousel */
+
+.carousel-container{
+    position:relative;
+}
+
+
+.blog-carousel{
+
+    display:flex;
+    gap:25px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    padding:20px;
+
+}
+
+
+.blog-carousel::-webkit-scrollbar{
+    display:none;
+}
+
+
+
+/* Blog Card */
+
+
+.blog-card{
+
+    min-width:320px;
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+.blog-card h3{
+
+    color:#2563eb;
+    margin-bottom:15px;
+
+}
+
+
+.blog-card p{
+
+    color:#64748b;
+    line-height:1.6;
+
+}
+
+
+.read-btn{
+
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 20px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+
+}
+
+
+
+/* Buttons */
+
+
+.arrow{
+
+position:absolute;
+top:45%;
+background:#2563eb;
+color:white;
+border:none;
+font-size:25px;
+padding:10px 15px;
+border-radius:50%;
+cursor:pointer;
+
+}
+
+
+.left{
+
+left:-10px;
+
+}
+
+
+.right{
+
+right:-10px;
+
+}
+
+
+
+@media(max-width:768px){
+
+.blog-card{
+    min-width:280px;
+}
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+<h1>
+Latest Blogs
+</h1>
+
+<p>
+Explore useful information about URL shortening, QR codes and digital marketing.
+</p>
+
+</header>
+
+
+
+
+<section class="blog-section">
+
+
+<h2>
+Featured Articles
+</h2>
+
+
+
+<div class="carousel-container">
+
+
+<button class="arrow left" onclick="moveLeft()">
+‹
+</button>
+
+
+
+<div class="blog-carousel" id="carousel">
+
+
+
+<!-- Blog 1 -->
+
+<div class="blog-card">
+
+
+<h3>
+QR Code Generator: Make Smart Digital Connections Easily
+</h3>
+
+
+<p>
+Learn how QR codes work, different types of QR codes, benefits and how they improve digital sharing.
+</p>
+
+
+<a href="blogs/qr-code-generator.html" class="read-btn">
+Read More
+</a>
+
+
+</div>
+
+
+
+
+<!-- Blog 2 -->
+
+<div class="blog-card">
+
+
+<h3>
+What Is A URL Shortener?
+</h3>
+
+
+<p>
+Understand how URL shorteners convert long web addresses into simple and shareable links.
+</p>
+
+
+<a href="blogs/url-shortener.html" class="read-btn">
+Read More
+</a>
+
+
+</div>
+
+
+
+
+
+<!-- Blog 3 -->
+
+<div class="blog-card">
+
+
+<h3>
+Benefits Of Short Links For Marketing
+</h3>
+
+
+<p>
+Discover how businesses use short URLs to improve online sharing and marketing campaigns.
+</p>
+
+
+<a href="blogs/short-links-marketing.html" class="read-btn">
+Read More
+</a>
+
+
+</div>
+
+
+
+
+<!-- Blog 4 -->
+
+<div class="blog-card">
+
+
+<h3>
+Custom URL Shortener Guide
+</h3>
+
+
+<p>
+Learn how branded short links help improve recognition and user experience.
+</p>
+
+
+<a href="blogs/custom-url-shortener.html" class="read-btn">
+Read More
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<button class="arrow right" onclick="moveRight()">
+›
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<script>
+
+
+let carousel=document.getElementById("carousel");
+
+
+function moveRight(){
+
+carousel.scrollLeft += 350;
+
+}
+
+
+
+function moveLeft(){
+
+carousel.scrollLeft -= 350;
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
