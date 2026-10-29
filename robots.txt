@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://minifyliink.github.io/minifylinks/sitemap.xml
